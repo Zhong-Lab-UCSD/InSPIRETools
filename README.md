@@ -30,6 +30,9 @@ Small molecule-protein interaction sequencing (SMOPIN-seq) is a high-throughput 
     - scipy
     - datetime
 ## Additional files required
+** White lists of library and molecule barcodes**<br />
+You will need lists of library barcodes and molecule barcodes in the first step to sort raw read pairs into molecule-end reads and protein-end reads. 
+
 **BWA Index of the transcriptome to be aligned**<br />
 You will need to download or build the bwa index of the target trancriptome for PROPERseqTools to use. Here we provide the compressed bwa index built from [RefSeq GRCh38 transcriptome](https://drive.google.com/file/d/1lAV-dVVwVaPi-qVLXibaAvgjtd1e-QMT/view?usp=sharing)
 
