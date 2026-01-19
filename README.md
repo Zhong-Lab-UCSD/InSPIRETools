@@ -74,6 +74,6 @@ SMOPINseqTools -a /path/to/read1.fastq
 <pre><code>
 -j     |String, Job ID to be prepended to the output files and directories, optional, default=PROPERseq"
 -t     |Int, Number of working threads, default=2
--r     |Char, (T or F), removal of intermediate files or not, default=T
+-r     |Char, (T or F), removal of intermediate and processed fastq files or not, default=T
 -h     |Print usage message" 
            
