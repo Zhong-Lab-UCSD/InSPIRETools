@@ -5,15 +5,14 @@ InSPIRE (In vivo Small molecule Protein Interaction REvealer) is a high-throughp
 
 ## Workflow
 1. Raw read pairs from the InSPIRE experiment are present in `.fastq` files.
-2. The reads are first searched for small molecule library barcode with with 1 base editing tolerance.
-3. The reads with library barcode are then searched for moledule barcodes with 1 base editing tolerance.
-4. The read-ends with library and molecule barcodes are assigned as the small-molecule-end reads. The corresponding other ends eassigned as the protein-end reads.
-5. Cutadpt is applied to remove 3' linker sequences and 5' adapter sequences from the protein-end reads. 
-6. Fastp is then applied to the adapter-trimmed protein-end reads to remove low-quality reads whose mean quality is lower than Q20 and too short reads whose length is shorter than 20 bp.
-7. The remaining protein-end reads are mapped to transcriptome with BWA with default parameters. 
-8. The mapped protein-end reads are output in `.bed` file with aligned genes and transcriptome alignment information.
-6. The protein-end reads are paired with mapped small-molecule reads by read ids. Deduplications are then performed based on UMIs.
-12. The kept small-molecule-protein pairs are output as small molecule-protein associations in `SmoProteinAssociations.csv`.
+2. The reads are first searched for small molecule identifiers with with 1 base editing tolerance.
+3. The read-ends with small molecule identifiers are assigned as the small-molecule-end reads. The corresponding other ends eassigned as the protein-end reads.
+4. Cutadpt is applied to remove 3' linker sequences and 5' adapter sequences from the protein-end reads. 
+5. Fastp is then applied to the adapter-trimmed protein-end reads to remove low-quality reads whose mean quality is lower than Q20 and too short reads whose length is shorter than 20 bp.
+6. The remaining protein-end reads are mapped to transcriptome with BWA with default parameters. 
+7. The mapped protein-end reads are output in `.bed` file with aligned genes and transcriptome alignment information.
+8. The protein-end reads are paired with mapped small-molecule reads by read ids. Deduplications are then performed based on UMIs.
+9. The kept small-molecule-protein pairs are output as small molecule-protein associations in `SmoProteinAssociations.csv`.
 
 
 ## Software Requirements
