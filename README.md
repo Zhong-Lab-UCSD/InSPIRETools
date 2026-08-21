@@ -6,7 +6,7 @@ InSPIRE (In vivo Small molecule Protein Interaction REvealer) is a high-throughp
 ## Workflow
 1. Raw read pairs from the InSPIRE experiment are present in `.fastq` files.
 2. The reads are first searched for small molecule library barcode with with 1 base editing tolerance.
-3. The reads with library barcode are then searched for 3 cycles of moledule barcodes with 1 base editing tolerance.
+3. The reads with library barcode are then searched for moledule barcodes with 1 base editing tolerance.
 4. The read-ends with library and molecule barcodes are assigned as the small-molecule-end reads. The corresponding other ends eassigned as the protein-end reads.
 5. Cutadpt is applied to remove 3' linker sequences and 5' adapter sequences from the protein-end reads. 
 6. Fastp is then applied to the adapter-trimmed protein-end reads to remove low-quality reads whose mean quality is lower than Q20 and too short reads whose length is shorter than 20 bp.
