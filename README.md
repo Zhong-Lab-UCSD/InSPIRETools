@@ -1,10 +1,10 @@
 # InSPIRETools
 
 ## Overview
-Small molecule-protein interaction sequencing (SMOPIN-seq) is a high-throughput sequencing technology that efficiently detects small molecule-protein associations in vitro. Here, we distribute SMOPINseqTools, a standardized data processing pipeline to identify small molecule-protein associations from fastq files of SMOPIN-seq experiments.<br />
+InSPIRE (In vivo Small molecule Protein Interaction REvealer) is a high-throughput sequencing technology that efficiently detects small molecule-protein associations in vitro. Here, we distribute SMOPINseqTools, a standardized data processing pipeline to identify small molecule-protein associations from fastq files of SMOPIN-seq experiments.<br />
 
 ## Workflow
-1. Raw read pairs from the PRIM-seq experiment are present in `.fastq` files.
+1. Raw read pairs from the InSPIRE experiment are present in `.fastq` files.
 2. The reads are first searched for small molecule library barcode with with 1 base editing tolerance.
 3. The reads with library barcode are then searched for 3 cycles of moledule barcodes with 1 base editing tolerance.
 4. The read-ends with library and molecule barcodes are assigned as the small-molecule-end reads. The corresponding other ends eassigned as the protein-end reads.
