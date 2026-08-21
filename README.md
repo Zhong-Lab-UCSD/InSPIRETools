@@ -1,4 +1,4 @@
-# SMOPINseqTools
+# InSPIRETools
 
 ## Overview
 Small molecule-protein interaction sequencing (SMOPIN-seq) is a high-throughput sequencing technology that efficiently detects small molecule-protein associations in vitro. Here, we distribute SMOPINseqTools, a standardized data processing pipeline to identify small molecule-protein associations from fastq files of SMOPIN-seq experiments.<br />
