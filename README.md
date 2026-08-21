@@ -44,13 +44,13 @@ You will also need a dictionary file that contains the information of transcript
 ## Usage
 **Installation**
 1. Clone the current github repository to your local machine. For example<br />
-`git clone https://github.com/Zhong-Lab-UCSD/SMOPINseqTools`
+`git clone https://github.com/Zhong-Lab-UCSD/InSPIRETools`
 2. Add the following path of the cloned directory to your `.bashrc` file<br />
-`export PATH=$PATH:/home/path/to/SMOPINseqTools/bin`
+`export PATH=$PATH:/home/path/to/InSPIRETools/bin`
 
 **To excute PROPERseqTools, run**
 <pre><code>
-SMOPINseqTools -a /path/to/read1.fastq
+InSPIRETools -a /path/to/read1.fastq
                -b /path/to/read2.fastq
                -i /path/to/bwaIndex/transcriptome.fa
                -l /path/to/smallMolecule/mapDirectory/
